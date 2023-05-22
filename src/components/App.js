@@ -5,6 +5,7 @@ import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
 import React, { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet';
 
 export default function App() {
   const [reportData, isReportDataShow] = useState(false);
@@ -45,6 +46,9 @@ export default function App() {
 
   return (
     <div className='page'>
+      <Helmet>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"></meta>
+      </Helmet>
       <Header />
       <Main
         isOpen={reportData}
