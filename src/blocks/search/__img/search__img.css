@@ -1,0 +1,7 @@
+.search__img {
+    width: 26px;
+    height: 26px;
+    object-fit: cover;
+    background-size: cover;
+    box-sizing: border-box;
+}

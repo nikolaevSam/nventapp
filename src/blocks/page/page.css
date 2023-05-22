@@ -1,0 +1,13 @@
+.body {
+    max-width: 425px;
+    min-height: 844px;
+}
+
+.page {
+    max-width: 425px;
+    min-height: 844px;
+    background-color: #151010;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}

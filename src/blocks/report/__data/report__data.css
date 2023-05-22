@@ -1,0 +1,14 @@
+.report__data {
+    font-family: "Inter", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.2;
+    margin: 0 0 0 10px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 389px) {
+    .report__data {
+        margin: 10px 0 0 0;
+    }
+}

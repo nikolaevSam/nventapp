@@ -1,0 +1,10 @@
+.header__title {
+    font-size: 24px;
+    font-family: "Inter", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
