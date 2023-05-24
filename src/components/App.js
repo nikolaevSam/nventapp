@@ -12,13 +12,23 @@ export default function App() {
   const [circuitData, setCircuitData] = useState({});
 
   useEffect(() => setCircuitData({
-    zone: 'Введите номер цепи.',
-    tag: '...',
-    cableType: '...',
-    length: '...',
-    operatingLoad: '...',
-    startUpCurrent: '...',
-    operatingCurrent: '...'
+    zone: "...",
+    lineNumber: "...",
+    tag: "...",
+    cableType: "...",
+    length: "...",
+    operatingLoad: "...",
+    operatingCurrent: "...",
+    startUpCurrent: "...",
+    ehtPanel: "...",
+    junctionBoxType: "...",
+    ngc20: "...",
+    rtd: "...",
+    iso: "...",
+    sld: "...",
+    cwd: "...",
+    pcl: "...",
+    bom: "...",
   }), [])
 
   function handlerFindCircuit(updatedCircuit) {
@@ -26,15 +36,7 @@ export default function App() {
       return circuit.id === updatedCircuit;
     });
     if (currentCircuit === undefined) {
-      return setCircuitData({
-        zone: 'Такого номера нет в базе!',
-        tag: '...',
-        cableType: '...',
-        length: '...',
-        operatingLoad: '...',
-        startUpCurrent: '...',
-        operatingCurrent: '...'
-      });
+      return console.log('Такой цепи нет!')
     } return setCircuitData(currentCircuit);
   };
 
